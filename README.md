@@ -1,4 +1,4 @@
-# P-Lot-Smart-Parking-System-Mobil-App
+# P-Lot-Smart-Parking-System-Mobile-App
 
 Bu çalışmada, Raspberry Pi 3B+ geliştirme kartı, Firebase ortamı, React kütüphanesi ve
 Python yazılım geliştirme dili kullanılarak akıllı otopark sistemi tasarlanmıştır. Tasarımda,
