@@ -226,6 +226,7 @@ mobil uygulama üzerinden kayıt olan kullanıcı bilgileri sisteme giriş kontr
 işlemleri için kayıt altına alınmıştır.
 
 *Firebase Ortamının Authentication Sayfası;*
+
 ![image](https://user-images.githubusercontent.com/70108497/181048582-4791da5b-015c-42a7-8bb0-2406910d6dcd.png)
 
 Sisteme kayıt olan her kullanıcı için Firebase tarafından bir kullanıcı ID’si atanmaktadır. Bu
@@ -234,6 +235,7 @@ kullanıcıların verileri aşağıdaki Şekil’de görüldüğü gibi Firebase
 tutulmaktadır.
 
 *Firebase Ortamının Cloud Firestore Sayfası;*
+
 ![image](https://user-images.githubusercontent.com/70108497/181048925-0ba5f8c8-dcd0-40e4-a62a-bd332801ac90.png)
 
 Firebase’in “Realtime Database” özelliği kullanılarak “users2” adında bir key
@@ -243,6 +245,7 @@ mobil uygulamadan gelen bilgiler Şekil’de görüldüğü gibi elde edilmişti
 sonucunda elde edilen bilgiler kullanılarak tasarlanan sistemde ilgili alanlarda işlenmiştir.
 
 *Firebase Realtime Database;*
+
 ![image](https://user-images.githubusercontent.com/70108497/181049571-ab967785-e6cc-438b-af47-85ea238b276a.png)
 
 # Gerçek Zamanlı Test
