@@ -220,4 +220,30 @@ t4.start()
 ```
 
 # Gerçek Zamanlı Test
+İlk olarak sistemin doğru bir şekilde çalışabilmesi için raspberry pi tarafındaki tasarlanan
+python kodu çalıştırılmıştır. Bu kısımda raspberry pi sürekli olarak firebase sunucusunu
+dinlemektedir. Bu sunucudan gelen bilgilere göre tasarlanan platform üzerindeki servo –
+motoru çalıştırmaktadır. Aynı zamanda raspberry pi tarafından firebase ortamına anlık olarak 
+IR Sensörlerden gelen bilgiler gönderilmektedir. Bu aşamada 4 adet IR Sensör kullanıldığı için 
+sensörlerin bir birlerini bloklamaması için bu sensörleri çalıştıran fonksiyonlar paralel olarak 
+yani hepsi aynı anda çalıştırılmıştır.
+
+*Sistemin Gerçek Zamanlı Raspberry Pi Tarafının Çalıştırılması;*
+![image](https://user-images.githubusercontent.com/70108497/181044814-c764b0e0-43b5-4603-8b13-f1828a4803f6.png)
+
+Yukarıdaki fotoğrafta alınan çıktı ilk versiyonların çıktısıdır. Son halinde IR Sensör bilgileri, giriş yapan kullanıcı araç plakası,
+giriş yapan kullanıcının ad - soyad bilgisi ve giriş yaptığı anın zaman bilgisi python tarafına yani raspberry pi tarafına firebase 
+ortamından gönderilmektedir. Giriş yapan her kullanıcının bilgileri bir listede tutulmaktadır. Bu listeye eklendikten sonra txt dosyasına 
+gerekli bilgiler kayıt edilmektedir.
+
+*Bilgilerin Txt Dosyasına Kayıt Edilmesi;*
+![image](https://user-images.githubusercontent.com/70108497/181047254-826a71b0-10c3-415d-9549-f82eae21939b.png)
+
+
+
+
+
+
+
+
 
