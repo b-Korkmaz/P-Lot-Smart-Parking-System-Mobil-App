@@ -219,6 +219,32 @@ t3.start()
 t4.start()
 ```
 
+# Firebase Ortamının Tasarlanması
+Firebase tasarımı kullanıcı bilgilerini tutmak, sistemin senkronize çalışmasını sağlamak için
+kullanılmıştır. İlk olarak bir Android projesi oluşturulmuştur. Android proje oluşturularak
+mobil uygulama üzerinden kayıt olan kullanıcı bilgileri sisteme giriş kontrolleri ve kullanıcı
+işlemleri için kayıt altına alınmıştır.
+
+*Firebase Ortamının Authentication Sayfası;*
+![image](https://user-images.githubusercontent.com/70108497/181048582-4791da5b-015c-42a7-8bb0-2406910d6dcd.png)
+
+Sisteme kayıt olan her kullanıcı için Firebase tarafından bir kullanıcı ID’si atanmaktadır. Bu
+ID sayesinde kullanıcı ile Raspberry Pi kontrolleri sağlanmaktadır. Aynı zamanda
+kullanıcıların verileri aşağıdaki Şekil’de görüldüğü gibi Firebase’in Cloud Firestore özelliği kullanılarak
+tutulmaktadır.
+
+*Firebase Ortamının Cloud Firestore Sayfası;*
+![image](https://user-images.githubusercontent.com/70108497/181048925-0ba5f8c8-dcd0-40e4-a62a-bd332801ac90.png)
+
+Firebase’in “Realtime Database” özelliği kullanılarak “users2” adında bir key
+oluşturulmuştur. Bu key altında “Position”, “a1”, “b1”, “c1”, “d1”, “kullanıci”, “plaka”
+değişkenleri oluşturularak Raspberry Pi tarafından anlık olarak IR Sensörden gelen bilgiler ve
+mobil uygulamadan gelen bilgiler Şekil’de görüldüğü gibi elde edilmiştir. Bu netice
+sonucunda elde edilen bilgiler kullanılarak tasarlanan sistemde ilgili alanlarda işlenmiştir.
+
+*Firebase Realtime Database;*
+![image](https://user-images.githubusercontent.com/70108497/181049571-ab967785-e6cc-438b-af47-85ea238b276a.png)
+
 # Gerçek Zamanlı Test
 İlk olarak sistemin doğru bir şekilde çalışabilmesi için raspberry pi tarafındaki tasarlanan
 python kodu çalıştırılmıştır. Bu kısımda raspberry pi sürekli olarak firebase sunucusunu
